@@ -61,6 +61,7 @@ require("dotenv").config();
 const app = express();
 
 //initialize PORT No
+// const PORT = 8000;
 const PORTS = 8001;
 
 //Middlewares
@@ -144,3 +145,6 @@ app.post("/logout", Logout);
 app.listen(process.env.PORT || PORTS, () => {
   console.log("Server Started on port: ", PORTS);
 });
+// app.listen(PORT, () => {
+//   console.log("Server Started on port: ", PORT);
+// });
